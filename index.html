@@ -6,15 +6,45 @@
       name="description"
       content="Dev Youngstown partners Youngstown's most promising student software developers with Youngstown's most promising startups."
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
       body {
+        margin: 0;
         font-family: sans-serif;
       }
 
       .text-youngstown-red {
         color: #cb333b;
       }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      @media screen and (min-width: 600px) {
+        h1 {
+          font-size: 4em;
+        }
+
+        h2 {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+
+      /* lists */
 
       .list {
         list-style: none;
@@ -38,20 +68,62 @@
       }
 
       /* sections */
+
+      section {
+        padding: 2em;
+      }
+
+      .hero-section {
+        height: 700px;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          0deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(150, 17, 180, 1) 80%
+        );
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: relative;
+
+        padding: 0;
+      }
+
+      .hero-section .lottie-rocket {
+        position: absolute;
+        bottom: -30px;
+        right: 0px;
+      }
+
+      .hero-content {
+        color: white;
+
+        padding: 2em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 8em;
+      }
     </style>
   </head>
 
   <body>
     <main>
-      <section>
-        <h1>Dev Youngstown</h1>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Dev Youngstown</h1>
 
-        <h2>
-          We partner <span class="text-youngstown-red">Youngstown's</span><br />
-          most promising student software developers<br />
-          with <span class="text-youngstown-red">Youngstown's</span><br />
-          most promising startups.
-        </h2>
+          <h2>
+            We partner <span class="text-youngstown-red">Youngstown's</span
+            ><br />
+            most promising student software developers<br />
+            with <span class="text-youngstown-red">Youngstown's</span><br />
+            most promising startups.
+          </h2>
+        </div>
       </section>
 
       <section>
