@@ -19,7 +19,7 @@
       }
 
       a {
-        color: white;
+        color: inherit;
       }
 
       h1 {
@@ -198,6 +198,23 @@
         text-align: center;
       }
 
+      .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .team-member {
+        min-width: 300px;
+        max-width: 400px;
+
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 1em;
+      }
+
       .friends-section {
         text-align: center;
       }
@@ -308,24 +325,24 @@
           <div class="specialization-card">
             <h3>MVPs</h3>
             <p>
-              Our Project Managers have scoped and built MVPs for all kinds of
-              startups. We can
+              Dev Youngstown's Project Managers have scoped and built Minimum
+              Viable Products (MVPs) for all kinds of startups.
             </p>
           </div>
 
           <div class="specialization-card">
             <h3>Web Apps</h3>
             <p>
-              We specialize at bringing highly-interactive, mobile-friendly
-              Progressive Web Apps (PWAs) to life.
+              Dev Youngstown specializes at bringing highly-interactive,
+              mobile-friendly Progressive Web Apps (PWAs) to life.
             </p>
           </div>
 
           <div class="specialization-card">
             <h3>APIs</h3>
             <p>
-              All of our projects are well-documented, RESTful, secure,
-              scalable, and built according to the
+              All of Dev Youngstown's projects are well-documented, RESTful,
+              secure, scalable, and built according to the
               <a href="https://12factor.net/">12 Factor methodology</a>.
             </p>
           </div>
@@ -399,9 +416,24 @@
       <section class="team-section">
         <h2>Our Team</h2>
 
-        <h3>Joe Duncko</h3>
+        <div class="team-members">
+          <div class="team-member">
+            <h3>Joe Duncko</h3>
+            <p>
+              Senior Frontend Engineer @ BlastPoint,<br />
+              Co-organizer @ Code Youngstown,<br />
+              Part-Time Faculty @ YSU
+            </p>
+          </div>
 
-        <h3>Our students</h3>
+          <div class="team-member">
+            <h3>Our students</h3>
+            <p>
+              Dev Youngstown's students are some of the most promising up and
+              coming software developers in Youngstown, OH.
+            </p>
+          </div>
+        </div>
       </section>
 
       <div style="width: 80%; border: 4px solid black; margin: auto"></div>
@@ -423,8 +455,8 @@
       <section class="contact-section">
         <h2>Want to work with us?</h2>
         <p>
-          Due to demand, we have limited capacity.<br />Projects are accepted on
-          a per-semester basis.
+          Due to high demand, we have limited capacity.<br />Projects are
+          accepted on a per-semester basis.
         </p>
 
         <form
