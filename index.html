@@ -223,18 +223,17 @@
         text-align: center;
       }
 
-      .contact-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5em;
-      }
+      .button {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 0.5em;
+        border-radius: 8px;
 
-      .contact-form-input {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 300px;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+
+        margin: 1em;
       }
 
       footer {
@@ -378,10 +377,11 @@
 
           <h3>Brownfields</h3>
           <p>
-            We believe that brownfield projects require a Project Manager who is
-            experienced with the existing project to effectively guide and get
-            the most out of a student. Instead we suggest hiring an intern
-            directly, which we are happy to help with!
+            We believe that brownfield projects (projects that already exist)
+            require a Project Manager who deeply understands the existing
+            project to effectively guide and get the most out of a student.
+            Instead we suggest hiring an intern directly, which we are happy to
+            help with!
           </p>
 
           <h3>Give companies direct access to students</h3>
@@ -394,21 +394,14 @@
 
           <h3>Lock you in</h3>
           <p>
-            Our projects are built to be built upon by anyone. Everything we
-            deliver is well-documented and built using the most popular open
-            source technologies on the market today.
+            Our projects are built to be built upon. Everything we deliver is
+            well-documented and built using the most popular open source
+            technologies on the market today.
           </p>
 
           <h3>Not pay our students</h3>
           <p>
-            All of our students are paid fairly by the hour. Every two weeks our
-            students bill us, then Dev Youngstown bills you accordingly.
-          </p>
-
-          <h3>Make any money</h3>
-          <p>
-            For now, all of our Project Managers are volunteers. Please be kind
-            to them and be conscientious of their time.
+            All of our students are paid fairly by the hour as 1099 contractors.
           </p>
         </div>
       </section>
@@ -457,37 +450,26 @@
       <section class="contact-section">
         <h2>Want to work with us?</h2>
         <p>
-          Due to high demand, we have limited capacity.<br />Projects are
-          accepted on a per-semester basis.
+          Due to high demand, we currently exclusively work with YBI Portfolio
+          Companies through their EVOLVE program.
         </p>
 
-        <form
-          class="contact-form"
-          action="https://formsubmit.co/joe@joeduncko.com"
-          method="POST"
+        <p>Projects and Interns are accepted on a per-semester basis.</p>
+
+        <a class="button" href="https://ybi.org/evolve-application/"
+          >YBI EVOLVE Application</a
         >
-          <div class="contact-form-input">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required />
-          </div>
 
-          <div class="contact-form-input">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-
-          <div class="contact-form-input">
-            <label for="message">What are you working on?</label>
-            <textarea name="message" id="message" required></textarea>
-          </div>
-
-          <button type="submit">Send</button>
-        </form>
+        <a
+          class="button"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfLtS6ehMstjlN4MsD2YCN5qoCknLo_YYEOHKb7TinhnaMpBw/viewform?usp=sf_link"
+          >Summer 2023 Internship Application</a
+        >
       </section>
     </main>
 
     <footer>
-      Copyright Joe Duncko
+      Copyright Dev Youngstown, LLC
       <script>
         document.write(new Date().getFullYear());
       </script>
